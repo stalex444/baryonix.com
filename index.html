@@ -331,6 +331,7 @@
             font-family: var(--font-mono);
             font-size: 0.9rem;
             color: var(--color-text-muted);
+            margin-bottom: 0.6rem;
         }
 
         .paper-meta a {
@@ -340,6 +341,114 @@
 
         .paper-meta a:hover {
             text-decoration: underline;
+        }
+
+        .paper-descriptor {
+            font-family: var(--font-serif);
+            font-size: 0.98rem;
+            font-style: italic;
+            line-height: 1.6;
+            color: var(--color-text-muted);
+            margin-bottom: 0;
+        }
+
+        /* Start Here — featured Proof Map card */
+        .start-here {
+            padding: 2rem;
+            background: var(--color-bg-subtle);
+            border: 1px solid var(--color-accent);
+            border-left: 3px solid var(--color-accent);
+            margin-bottom: 2.5rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .start-here:hover {
+            background: rgba(224, 190, 106, 0.06);
+        }
+
+        .start-here .start-label {
+            font-family: var(--font-mono);
+            font-size: 0.8rem;
+            font-weight: 500;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--color-accent);
+            margin-bottom: 0.85rem;
+        }
+
+        .start-here h4 {
+            font-family: var(--font-serif);
+            font-size: 1.2rem;
+            font-weight: 500;
+            line-height: 1.4;
+            color: var(--color-text);
+            margin-bottom: 0.75rem;
+        }
+
+        .start-here .start-descriptor {
+            font-family: var(--font-serif);
+            font-size: 1rem;
+            font-style: italic;
+            line-height: 1.6;
+            color: var(--color-text-muted);
+            margin-bottom: 1rem;
+        }
+
+        .start-here .start-meta {
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            color: var(--color-text-muted);
+        }
+
+        .start-here .start-meta a {
+            color: var(--color-accent);
+        }
+
+        .start-here .start-meta a:hover {
+            text-decoration: underline;
+        }
+
+        /* Code & Verification repos */
+        .repo-list {
+            display: grid;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .repo {
+            padding: 1.1rem 1.35rem;
+            background: var(--color-bg-subtle);
+            border: 1px solid var(--color-border);
+            border-left: 2px solid var(--color-accent);
+            transition: border-color 0.3s ease;
+        }
+
+        .repo:hover {
+            border-left-color: var(--color-text);
+        }
+
+        .repo-name {
+            font-family: var(--font-mono);
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--color-accent);
+            text-decoration: none;
+            display: inline-block;
+            margin-bottom: 0.35rem;
+            border-bottom: none;
+        }
+
+        .repo-name:hover {
+            border-bottom: 1px solid var(--color-accent);
+        }
+
+        .repo-desc {
+            font-family: var(--font-serif);
+            font-size: 0.95rem;
+            font-style: italic;
+            line-height: 1.55;
+            color: var(--color-text-muted);
+            margin-bottom: 0;
         }
 
         .publications-link {
@@ -455,6 +564,9 @@
         section:nth-child(2) { animation-delay: 0.1s; }
         section:nth-child(3) { animation-delay: 0.2s; }
         section:nth-child(4) { animation-delay: 0.3s; }
+        section:nth-child(5) { animation-delay: 0.4s; }
+        section:nth-child(6) { animation-delay: 0.5s; }
+        section:nth-child(7) { animation-delay: 0.6s; }
     </style>
 </head>
 <body>
@@ -543,20 +655,90 @@
 
         <section>
             <div class="section-label">Publications</div>
-            
-            <!-- PAPER TEMPLATE - Copy this block for each new paper -->
-            <div class="paper">
-                <h4>Deriving the Fine Structure Constant from Dimensional Geometry: A Lagrangian Formulation</h4>
-                <p class="paper-meta">2025 · <a href="https://doi.org/10.5281/zenodo.18076694" target="_blank" rel="noopener">DOI: 10.5281/zenodo.18076694</a></p>
-            </div>
-            <!-- END PAPER -->
 
-            <a href="https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Stephanie%20Alexander%22" target="_blank" rel="noopener" class="publications-link">
+            <!-- Start Here — featured Proof Map card -->
+            <div class="start-here">
+                <div class="start-label">Start Here</div>
+                <h4>Pisot Dimensional Theory: Proof Map</h4>
+                <p class="start-descriptor">Reference document. Every claim in the framework with its logical dependencies, current status, and proof source — from Peano axioms to cosmological predictions. 43 claims established by theorem, 19 computationally verified, 6 open problems.</p>
+                <p class="start-meta">2026 · Version 3 · <a href="https://doi.org/10.5281/zenodo.19133097" target="_blank" rel="noopener">DOI: 10.5281/zenodo.19133097</a></p>
+            </div>
+
+            <div class="paper">
+                <h4>A Fibonacci&#8211;Lucas Spectral Law for the Trinomials x&#8319; = x + 1</h4>
+                <p class="paper-meta">2026 · <a href="https://doi.org/10.5281/zenodo.15089498" target="_blank" rel="noopener">DOI: 10.5281/zenodo.15089498</a></p>
+                <p class="paper-descriptor">Establishes the unit-norm identity N(&#961;Q) = &#8722;1 and the Fibonacci&#8211;Lucas trace structure across the trinomial family.</p>
+            </div>
+
+            <div class="paper">
+                <h4>Elliptic Curves Associated to the Pisot-Boundary Polynomials x&#179; &#8722; x &#8722; 1 and x&#8308; &#8722; x &#8722; 1</h4>
+                <p class="paper-meta">2026 · <a href="https://doi.org/10.5281/zenodo.18825768" target="_blank" rel="noopener">DOI: 10.5281/zenodo.18825768</a></p>
+                <p class="paper-descriptor">Defines the elliptic curves E&#8323; and E&#8324; from the Pisot polynomials and catalogs their arithmetic invariants &#8212; conductors, discriminants, ranks, L-functions, modular forms.</p>
+            </div>
+
+            <div class="paper">
+                <h4>Arithmetic Geometry at the Pisot Boundary: Galois Groups, Class Fields, and Implications for Physical Geometry and Loop Quantum Gravity</h4>
+                <p class="paper-meta">2026 · <a href="https://doi.org/10.5281/zenodo.19561374" target="_blank" rel="noopener">DOI: 10.5281/zenodo.19561374</a></p>
+                <p class="paper-descriptor">Six theorems: Galois groups S&#8323; and S&#8324;, prime discriminants &#8722;23 and &#8722;283, and the Hilbert class field of &#8474;(&#8730;&#8722;23). Derives the Barbero&#8211;Immirzi parameter of loop quantum gravity algebraically.</p>
+            </div>
+
+            <div class="paper">
+                <h4>The Strong Coupling Constant as an Elliptic Period: &#945;&#8347;(M&#1047;) from the Arithmetic Geometry of the Pisot Boundary</h4>
+                <p class="paper-meta">2026 · <a href="https://doi.org/10.5281/zenodo.19634179" target="_blank" rel="noopener">DOI: 10.5281/zenodo.19634179</a></p>
+                <p class="paper-descriptor">Identifies &#945;&#8347;(M&#1047;) as the real period of the elliptic curve 1132b1 divided by 23. Matches the FLAG lattice average to 0.003% with zero free parameters.</p>
+            </div>
+
+            <div class="paper">
+                <h4>The Ringing Universe at the Pisot Boundary: Why x&#179; = x + 1 Requires Oscillation</h4>
+                <p class="paper-meta">2026 · <a href="https://doi.org/10.5281/zenodo.18869435" target="_blank" rel="noopener">DOI: 10.5281/zenodo.18869435</a></p>
+                <p class="paper-descriptor">Trichotomy theorem: the plastic constant is the unique dimension in the trinomial family where integer convergence is oscillatory rather than monotonic.</p>
+            </div>
+
+            <div class="paper">
+                <h4>Cosmological Ringing from the Pisot Boundary: A Zero-Parameter Prediction of the Ringermacher&#8211;Mead Oscillation</h4>
+                <p class="paper-meta">2026 · <a href="https://doi.org/10.5281/zenodo.19057121" target="_blank" rel="noopener">DOI: 10.5281/zenodo.19057121</a></p>
+                <p class="paper-descriptor">Tests the algebraic oscillation prediction against the 7.15 HHz Ringermacher&#8211;Mead signal in Pantheon+ supernova data. Matches to 0.16% with zero free parameters.</p>
+            </div>
+
+            <div class="paper">
+                <h4>The Complete Guide to Pisot Dimensional Theory: From Zero to Deriving All Physical Constants</h4>
+                <p class="paper-meta">2026 · <a href="https://doi.org/10.5281/zenodo.18351844" target="_blank" rel="noopener">DOI: 10.5281/zenodo.18351844</a></p>
+                <p class="paper-descriptor">Self-contained tutorial. Derives the full predictions table from first principles with no prerequisites beyond basic mathematics.</p>
+            </div>
+
+            <a href="https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Alexander%2C%20Stephanie%22&l=list&p=1&s=10&sort=newest" target="_blank" rel="noopener" class="publications-link" id="zenodo-profile-link">
                 View All on Zenodo
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                 </svg>
             </a>
+        </section>
+
+        <section>
+            <div class="section-label">Code &amp; Verification</div>
+            <p>Every quantitative claim above is reproducible. The repositories below contain the verification code &#8212; clone, run, and independently confirm the results in under a minute per repo.</p>
+            <div class="repo-list">
+                <div class="repo">
+                    <a href="https://github.com/stalex444/pdt-automath" target="_blank" rel="noopener" class="repo-name">stalex444 / pdt-automath</a>
+                    <p class="repo-desc">Automated mathematical discovery pipeline. Derives and verifies 95 theorems across 10 branches of mathematics from three axioms.</p>
+                </div>
+                <div class="repo">
+                    <a href="https://github.com/stalex444/golden-ratio-unit-norm" target="_blank" rel="noopener" class="repo-name">stalex444 / golden-ratio-unit-norm</a>
+                    <p class="repo-desc">Proof of the unit-norm identity N(&#961;Q) = &#8722;1 in the degree-12 compositum &#8474;(&#961;, Q).</p>
+                </div>
+                <div class="repo">
+                    <a href="https://github.com/stalex444/dimensional-origin-Newton" target="_blank" rel="noopener" class="repo-name">stalex444 / dimensional-origin-Newton</a>
+                    <p class="repo-desc">Verification code for the algebraic derivation of Newton&#8217;s gravitational constant G to 0.003% of the CODATA value.</p>
+                </div>
+                <div class="repo">
+                    <a href="https://github.com/stalex444/pdt-arithmetic-geometry" target="_blank" rel="noopener" class="repo-name">stalex444 / pdt-arithmetic-geometry</a>
+                    <p class="repo-desc">Verifies all six theorems of the arithmetic geometry paper and computes the Barbero&#8211;Immirzi parameter &#947;&#7522;&#7522; = &#955;&#8324;&#961;.</p>
+                </div>
+                <div class="repo">
+                    <a href="https://github.com/stalex444/pdt-strong-coupling" target="_blank" rel="noopener" class="repo-name">stalex444 / pdt-strong-coupling</a>
+                    <p class="repo-desc">Computes the real period of the elliptic curve 1132b1, divides by 23, and reproduces &#945;&#8347;(M&#1047;) = 0.11792 in under 30 seconds.</p>
+                </div>
+            </div>
         </section>
 
         <section>
