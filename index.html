@@ -352,6 +352,52 @@
             margin-bottom: 0;
         }
 
+        /* Registered formalizations */
+        .entry-group {
+            margin-top: 2.25rem;
+        }
+
+        .entry-group h3 {
+            font-family: var(--font-mono);
+            font-size: 1.05rem;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            color: var(--color-text);
+            margin-bottom: 0.5rem;
+            text-align: left;
+        }
+
+        .entry-count {
+            color: var(--color-text-muted);
+            font-weight: 400;
+        }
+
+        .entry {
+            padding: 0.8rem 0;
+            border-bottom: 1px solid var(--color-border);
+            text-align: left;
+        }
+
+        .entry-group .entry:last-child {
+            border-bottom: none;
+        }
+
+        .entry-title {
+            font-size: 1rem;
+            line-height: 1.5;
+            color: var(--color-text);
+            margin-bottom: 0.2rem;
+        }
+
+        .entry-meta {
+            font-family: var(--font-mono);
+            font-size: 0.82rem;
+            line-height: 1.5;
+            color: var(--color-text-muted);
+            margin-bottom: 0;
+            overflow-wrap: anywhere;
+        }
+
         /* Start Here — featured Proof Map card */
         .start-here {
             padding: 2rem;
@@ -648,9 +694,141 @@
                 </div>
                 <div class="research-area">
                     <h3>Machine-Verified Mathematics</h3>
-                    <p>Every theorem checked by the Lean 4 proof kernel, then registered at the <a href="https://palomar-registry.org" target="_blank" rel="noopener">Palomar registry</a> after independent editorial review &#8212; nineteen entries to date, from the arithmetic of the Pisot boundary to the Lie-algebra generation and stabilizer theorems behind the gravity derivation and the least physical dimension of an inflation-symmetric model set (October 2026). <a href="https://github.com/stalex444/pdt-lean#readme" target="_blank" rel="noopener">The registered entries, with registry IDs and pinned commits &#8594;</a></p>
+                    <p>Every theorem checked by the Lean 4 proof kernel, then registered at the <a href="https://palomar-registry.org" target="_blank" rel="noopener">Palomar registry</a> after the registry&#8217;s mechanical verification (Lean&#8217;s kernel and independent kernels) succeeded and its automated review found no blocking problem &#8212; twenty-six entries to date, from the arithmetic of the Pisot boundary to the Lie-algebra generation and stabilizer theorems behind the gravity derivation, the least physical dimension of an inflation-symmetric model set, and the classification of the conformal Killing fields of flat space in dimension three and higher (November 2026). <a href="#formalizations">The registered entries, with registry IDs and pinned commits &#8594;</a></p>
                 </div>
             </div>
+        </section>
+
+        <section id="formalizations">
+            <div class="section-label">Registered Formalizations</div>
+            <p>Each entry below was checked by the Lean 4 proof kernel and registered at the <a href="https://palomar-registry.org" target="_blank" rel="noopener">Palomar registry</a> once the registry&#8217;s mechanical verification (Lean&#8217;s kernel and independent kernels) succeeded and its automated review found no blocking problem &#8212; twenty-six entries to date. Each links to its public registry record (with the number of compared statements) and to its repository at the registered commit.</p>
+
+            <div class="entry-group">
+                <h3>Number theory and algebra <span class="entry-count">&#183; 12</span></h3>
+                <div class="entry">
+                    <p class="entry-title">For each degree d in {2, 3, 4}, x<sup>d</sup> &#8722; x &#8722; 1 attains the minimal Mahler measure above one among monic irreducible integer polynomials of degree d</p>
+                    <p class="entry-meta"><a href="https://palomar-registry.org/entry.html?id=PALOMAR-2026-08-31-000004" target="_blank" rel="noopener">PALOMAR-2026-08-31-000004</a> &#183; 9 statements &#183; <a href="https://github.com/stalex444/mahler-measure-minima/tree/ca3df22ba91ce60e5199aee4a0c35a6ca8ee559d" target="_blank" rel="noopener">repository</a></p>
+                </div>
+                <div class="entry">
+                    <p class="entry-title">The compositum of the two Mahler minimizers &#961; (x&#179; = x + 1) and Q (x&#8308; = x + 1): exact measure, conjugate census, house, and minimal product recurrence</p>
+                    <p class="entry-meta"><a href="https://palomar-registry.org/entry.html?id=PALOMAR-2026-09-01-000005" target="_blank" rel="noopener">PALOMAR-2026-09-01-000005</a> &#183; 22 statements &#183; <a href="https://github.com/stalex444/mahler-minimizer-compositum/tree/84b364a5f98daefc1be387ae0aeb3d39866eca79" target="_blank" rel="noopener">repository</a></p>
+                </div>
+                <div class="entry">
+                    <p class="entry-title">Only two morphic numbers: the Aarts&#8211;Fokkink&#8211;Kruijtzer classification of the golden ratio and the plastic number</p>
+                    <p class="entry-meta"><a href="https://palomar-registry.org/entry.html?id=PALOMAR-2026-09-01-000008" target="_blank" rel="noopener">PALOMAR-2026-09-01-000008</a> &#183; 4 statements &#183; <a href="https://github.com/stalex444/only-two-morphic-numbers/tree/9d3664f4ad3abc3783a9296ad1207a1ef1fee41d" target="_blank" rel="noopener">repository</a></p>
+                </div>
+                <div class="entry">
+                    <p class="entry-title">The golden family&#8217;s boundary at n = 3: general-n theorems for x&#8319; = x + 1</p>
+                    <p class="entry-meta"><a href="https://palomar-registry.org/entry.html?id=PALOMAR-2026-09-01-000012" target="_blank" rel="noopener">PALOMAR-2026-09-01-000012</a> &#183; 11 statements &#183; <a href="https://github.com/stalex444/golden-family-boundary/tree/fc43a62561b4d7846ca25273229a4f964dff7ae5" target="_blank" rel="noopener">repository</a></p>
+                </div>
+                <div class="entry">
+                    <p class="entry-title">Salem&#8217;s theorem: every Pisot number is a two-sided limit of Salem numbers</p>
+                    <p class="entry-meta"><a href="https://palomar-registry.org/entry.html?id=PALOMAR-2026-09-02-000003" target="_blank" rel="noopener">PALOMAR-2026-09-02-000003</a> &#183; 3 statements &#183; <a href="https://github.com/stalex444/salem-theorem/tree/887be765bf24c6a645600dfc7bd0a1055a1761dd" target="_blank" rel="noopener">repository</a></p>
+                </div>
+                <div class="entry">
+                    <p class="entry-title">The trace form of a tensor product of algebras and the signature product rule</p>
+                    <p class="entry-meta"><a href="https://palomar-registry.org/entry.html?id=PALOMAR-2026-09-02-000014" target="_blank" rel="noopener">PALOMAR-2026-09-02-000014</a> &#183; 23 statements &#183; <a href="https://github.com/stalex444/golden-family-trace-forms/tree/9528df064df58318213b541048e05ff4c0d9cb67" target="_blank" rel="noopener">repository</a></p>
+                </div>
+                <div class="entry">
+                    <p class="entry-title">Growth series of the triangle Coxeter groups (p, q, &#8734;)</p>
+                    <p class="entry-meta"><a href="https://palomar-registry.org/entry.html?id=PALOMAR-2026-10-17-000013" target="_blank" rel="noopener">PALOMAR-2026-10-17-000013</a> &#183; 20 statements &#183; <a href="https://github.com/stalex444/triangle-group-growth/tree/874b6a264e1eb8adf06141686eabab8a7afbe583" target="_blank" rel="noopener">repository</a></p>
+                </div>
+                <div class="entry">
+                    <p class="entry-title">Hermite&#8217;s signature theorem and the coprime compositum, with the degree-12 compositum of x&#179; &#8722; x &#8722; 1 and x&#8308; &#8722; x &#8722; 1</p>
+                    <p class="entry-meta"><a href="https://palomar-registry.org/entry.html?id=PALOMAR-2026-10-21-000012" target="_blank" rel="noopener">PALOMAR-2026-10-21-000012</a> &#183; 18 statements &#183; <a href="https://github.com/stalex444/pdt-hermite-signature-compositum/tree/5aa870e98236ba240561b798265c629df8c2d031" target="_blank" rel="noopener">repository</a></p>
+                </div>
+                <div class="entry">
+                    <p class="entry-title">The additive theorem for 2-transitive Galois groups (Girstmair; Dixon, Theorem 1&#8242;)</p>
+                    <p class="entry-meta"><a href="https://palomar-registry.org/entry.html?id=PALOMAR-2026-10-30-000002" target="_blank" rel="noopener">PALOMAR-2026-10-30-000002</a> &#183; 8 statements &#183; <a href="https://github.com/stalex444/bds-dixon-additive-relations/tree/2d422c1b10e3823105ae6f3b68a439dee6f8d4a7" target="_blank" rel="noopener">repository</a></p>
+                </div>
+                <div class="entry">
+                    <p class="entry-title">The Arithmetic of Time: reversible units of a degree-nine field K = LM (L, M cubic), exactly those of trivial relative norm to L and to M</p>
+                    <p class="entry-meta"><a href="https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-02-000018" target="_blank" rel="noopener">PALOMAR-2026-11-02-000018</a> &#183; 10 statements &#183; <a href="https://github.com/stalex444/arithmetic-of-time-reversible-units-degree-nine/tree/723197b0d1d48fbe12bf19e81683de0090c5ce5c" target="_blank" rel="noopener">repository</a></p>
+                </div>
+                <div class="entry">
+                    <p class="entry-title">The settling sum of the plastic number: &#8721;<sub>n&#8805;1</sub> &#8214;&#961;&#8319;&#8214;&#178; = &#961;</p>
+                    <p class="entry-meta"><a href="https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-06-000005" target="_blank" rel="noopener">PALOMAR-2026-11-06-000005</a> &#183; 6 statements &#183; <a href="https://github.com/stalex444/arithmetic-of-time-settling-sum/tree/a0f3d9903e91e4e99f80b70d1eeade39b82d7d3e" target="_blank" rel="noopener">repository</a></p>
+                </div>
+                <div class="entry">
+                    <p class="entry-title">Herstein&#8217;s theorem on Jordan homomorphisms onto prime rings</p>
+                    <p class="entry-meta"><a href="https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-11-000008" target="_blank" rel="noopener">PALOMAR-2026-11-11-000008</a> &#183; 6 statements &#183; <a href="https://github.com/stalex444/herstein-jordan-homomorphisms/tree/34dffa8aace3a1b565b11cbb561db3a58fa203da" target="_blank" rel="noopener">repository</a></p>
+                </div>
+            </div>
+
+            <div class="entry-group">
+                <h3>Quantum foundations <span class="entry-count">&#183; 5</span></h3>
+                <div class="entry">
+                    <p class="entry-title">Exact-constant results for the CHSH operator of an arbitrary CHSH tuple</p>
+                    <p class="entry-meta"><a href="https://palomar-registry.org/entry.html?id=PALOMAR-2026-08-19-000007" target="_blank" rel="noopener">PALOMAR-2026-08-19-000007</a> &#183; 13 statements &#183; <a href="https://github.com/stalex444/pdt-lean/tree/0dae307fb786a3d180bba137a44555a1bf645637" target="_blank" rel="noopener">repository</a></p>
+                </div>
+                <div class="entry">
+                    <p class="entry-title">Busch&#8217;s theorem in finite dimension: Born-rule uniqueness on quantum effects</p>
+                    <p class="entry-meta"><a href="https://palomar-registry.org/entry.html?id=PALOMAR-2026-08-31-000014" target="_blank" rel="noopener">PALOMAR-2026-08-31-000014</a> &#183; 2 statements &#183; <a href="https://github.com/stalex444/Busch-theorem/tree/b6801977b666320c38b7027bc130a49583578902" target="_blank" rel="noopener">repository</a></p>
+                </div>
+                <div class="entry">
+                    <p class="entry-title">The entangled Born correlations: a mixed-state entanglement witness through the Born rule forced on the composite algebra</p>
+                    <p class="entry-meta"><a href="https://palomar-registry.org/entry.html?id=PALOMAR-2026-09-01-000003" target="_blank" rel="noopener">PALOMAR-2026-09-01-000003</a> &#183; 10 statements &#183; <a href="https://github.com/stalex444/werner-window/tree/81c70fe45f81da86c25254f3eb52123d504b452c" target="_blank" rel="noopener">repository</a></p>
+                </div>
+                <div class="entry">
+                    <p class="entry-title">CHSH bounds for contractions by dilation: Tsirelson&#8217;s bound, the classical bound under a commuting party, and the necessity of noncommutativity</p>
+                    <p class="entry-meta"><a href="https://palomar-registry.org/entry.html?id=PALOMAR-2026-10-28-000030" target="_blank" rel="noopener">PALOMAR-2026-10-28-000030</a> &#183; 9 statements &#183; <a href="https://github.com/stalex444/tsirelson-contractions/tree/ef7bd3b81c4cda7030329bc1057df7b00e9efb9b" target="_blank" rel="noopener">repository</a></p>
+                </div>
+                <div class="entry">
+                    <p class="entry-title">The two-qubit Hardy ladder: the closed form and its unique maximiser for every K</p>
+                    <p class="entry-meta"><a href="https://palomar-registry.org/entry.html?id=PALOMAR-2026-10-30-000005" target="_blank" rel="noopener">PALOMAR-2026-10-30-000005</a> &#183; 30 statements &#183; <a href="https://github.com/stalex444/hardy-ladder/tree/5764ec4a239fcb14f8de263372fc906bd217f349" target="_blank" rel="noopener">repository</a></p>
+                </div>
+            </div>
+
+            <div class="entry-group">
+                <h3>Lie algebras, geometry and mathematical physics <span class="entry-count">&#183; 5</span></h3>
+                <div class="entry">
+                    <p class="entry-title">Radial harmonic functions on a real inner product space: the classification, the Laplacian of radial functions, and the stability of circular orbits for power-law central forces</p>
+                    <p class="entry-meta"><a href="https://palomar-registry.org/entry.html?id=PALOMAR-2026-09-03-000004" target="_blank" rel="noopener">PALOMAR-2026-09-03-000004</a> &#183; 23 statements &#183; <a href="https://github.com/stalex444/radial-harmonic-classification/tree/74e9b3ea7f204fba2e84e546c80457bcca5c6268" target="_blank" rel="noopener">repository</a></p>
+                </div>
+                <div class="entry">
+                    <p class="entry-title">Local Hodge generation of sl(15) and scalar response rigidity</p>
+                    <p class="entry-meta"><a href="https://palomar-registry.org/entry.html?id=PALOMAR-2026-09-30-000024" target="_blank" rel="noopener">PALOMAR-2026-09-30-000024</a> &#183; 1 statement &#183; <a href="https://github.com/stalex444/pdt-hodge-lie-generation/tree/e2d8dde6f076b730b9a718c95ff1664c6aa88b51" target="_blank" rel="noopener">repository</a></p>
+                </div>
+                <div class="entry">
+                    <p class="entry-title">Metric&#8211;Pfaffian Stabilizers and Fixed-Hodge Field Recovery</p>
+                    <p class="entry-meta"><a href="https://palomar-registry.org/entry.html?id=PALOMAR-2026-09-30-000035" target="_blank" rel="noopener">PALOMAR-2026-09-30-000035</a> &#183; 9 statements &#183; <a href="https://github.com/stalex444/pdt-metric-pfaffian-hodge-stabilizers/tree/0e436b9e3468e0393641d42fd37dfc9e3520ffbf" target="_blank" rel="noopener">repository</a></p>
+                </div>
+                <div class="entry">
+                    <p class="entry-title">Selection of the electromagnetic source tensor by covariance, conservation and the exchange law</p>
+                    <p class="entry-meta"><a href="https://palomar-registry.org/entry.html?id=PALOMAR-2026-10-14-000009" target="_blank" rel="noopener">PALOMAR-2026-10-14-000009</a> &#183; 12 statements &#183; <a href="https://github.com/stalex444/pdt-em-source-selection/tree/1c9ba637b5e664a88b6487d463515587616476e1" target="_blank" rel="noopener">repository</a></p>
+                </div>
+                <div class="entry">
+                    <p class="entry-title">Conformal Killing and Killing fields of flat pseudo-Euclidean space: classification for n &#8805; 3 in every signature</p>
+                    <p class="entry-meta"><a href="https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-12-000002" target="_blank" rel="noopener">PALOMAR-2026-11-12-000002</a> &#183; 9 statements &#183; <a href="https://github.com/stalex444/conformal-killing-flat/tree/8869b23e96d737ef9424dbb8796d91c6256b7acd" target="_blank" rel="noopener">repository</a></p>
+                </div>
+            </div>
+
+            <div class="entry-group">
+                <h3>Substitutions, symbolic dynamics and aperiodic order <span class="entry-count">&#183; 4</span></h3>
+                <div class="entry">
+                    <p class="entry-title">The Arithmetic of Time: chirality of the Padovan substitution (0 &#8614; 1, 1 &#8614; 2, 2 &#8614; 01); the factor language reads differently backwards</p>
+                    <p class="entry-meta"><a href="https://palomar-registry.org/entry.html?id=PALOMAR-2026-08-19-000006" target="_blank" rel="noopener">PALOMAR-2026-08-19-000006</a> &#183; 3 statements &#183; <a href="https://github.com/stalex444/arithmetic-of-time/tree/dff259119db097947f946f44620b42d0bd242b7d" target="_blank" rel="noopener">repository</a></p>
+                </div>
+                <div class="entry">
+                    <p class="entry-title">Sharp arithmetic separation in chiral Padovan histories: quantitative recurrence for the infinite Padovan prefix path; cubic and quartic record windows</p>
+                    <p class="entry-meta"><a href="https://palomar-registry.org/entry.html?id=PALOMAR-2026-09-04-000004" target="_blank" rel="noopener">PALOMAR-2026-09-04-000004</a> &#183; 16 statements &#183; <a href="https://github.com/stalex444/chiral-padovan-histories/tree/14711e6cffdc74669d15f808d4aec8cbb373d71f" target="_blank" rel="noopener">repository</a></p>
+                </div>
+                <div class="entry">
+                    <p class="entry-title">The Arithmetic of Time: the slowest settling clock on at most three letters is the Padovan substitution, unique up to mirror image</p>
+                    <p class="entry-meta"><a href="https://palomar-registry.org/entry.html?id=PALOMAR-2026-10-18-000019" target="_blank" rel="noopener">PALOMAR-2026-10-18-000019</a> &#183; 5 statements &#183; <a href="https://github.com/stalex444/arithmetic-of-time-slowest-clock/tree/49eafbab4af8899b2a66469697bf74683a88ce87" target="_blank" rel="noopener">repository</a></p>
+                </div>
+                <div class="entry">
+                    <p class="entry-title">The least physical dimension of an inflation-symmetric model set</p>
+                    <p class="entry-meta"><a href="https://palomar-registry.org/entry.html?id=PALOMAR-2026-10-22-000030" target="_blank" rel="noopener">PALOMAR-2026-10-22-000030</a> &#183; 13 statements &#183; <a href="https://github.com/stalex444/pdt-inflation-model-set-dimension/tree/c41d9d29f9c86fb0f849df79b03e713d3405a5eb" target="_blank" rel="noopener">repository</a></p>
+                </div>
+            </div>
+
+            <a href="https://github.com/stalex444/pdt-lean#readme" target="_blank" rel="noopener" class="publications-link">
+                Notes on the entries, in the pdt-lean README
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+            </a>
         </section>
 
         <section>
@@ -737,7 +915,7 @@
 
         <section>
             <div class="section-label">Code &amp; Verification</div>
-            <p>Every quantitative claim above is reproducible. The computational repositories confirm their results in under a minute each; the Lean repositories carry full kernel proofs &#8212; clone, lake build, and the machine checks every step (axiom audits included). The kernel-verified entries registered at the <a href="https://palomar-registry.org" target="_blank" rel="noopener">Palomar registry</a> are indexed, with their registry IDs and pinned commits, in the <a href="https://github.com/stalex444/pdt-lean#readme" target="_blank" rel="noopener">pdt-lean README</a>.</p>
+            <p>Every quantitative claim above is reproducible. The computational repositories confirm their results in under a minute each; the Lean repositories carry full kernel proofs &#8212; clone, lake build, and the machine checks every step (axiom audits included). The kernel-verified entries registered at the <a href="https://palomar-registry.org" target="_blank" rel="noopener">Palomar registry</a> are listed, with their registry IDs and pinned commits, under <a href="#formalizations">Registered Formalizations</a> above.</p>
             <div class="repo-list">
                 <div class="repo">
                     <a class="repo-name" href="https://github.com/stalex444/pdt-lean" target="_blank" rel="noopener">stalex444 / pdt-lean</a>
@@ -747,6 +925,11 @@
                 <div class="repo">
                     <a class="repo-name" href="https://github.com/stalex444/arithmetic-of-time" target="_blank" rel="noopener">stalex444 / arithmetic-of-time</a>
                     <p class="repo-desc">The arithmetic of time, kernel-checked: the arrow of time as a theorem (the settled history, read backwards, is provably a different object), an exact per-tick irreversibility rate, a tick proved aperiodic but never random, and the Pisot boundary. CI reruns the full build and axiom audit on every push.</p>
+                </div>
+
+                <div class="repo">
+                    <a class="repo-name" href="https://github.com/stalex444/yang-mills-conformal-current" target="_blank" rel="noopener">stalex444 / yang-mills-conformal-current</a>
+                    <p class="repo-desc">Lean add-on to the Wilson Yang&#8211;Mills release (yang-mills-group/OpenAI-YM-20261028, commit 3456e5e7): the divergence of the stress current against conformal Killing fields, with the trace term, at separated points.</p>
                 </div>
 
                 <div class="repo">
